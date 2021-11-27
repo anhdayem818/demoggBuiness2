@@ -9,6 +9,7 @@ client_id = Google::Auth::ClientId.from_file('./config/client_secret.json')
 
 token_store = Google::Auth::Stores::FileTokenStore.new(:file => './tokens.yaml')
 authorizer = Google::Auth::UserAuthorizer.new(client_id, scopes, token_store)
+user_id= 'default'
 credentials = authorizer.get_credentials(user_id)
 if credentials.nil?
   url = authorizer.get_authorization_url(base_url: OOB_URI )
