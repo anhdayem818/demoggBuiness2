@@ -62,4 +62,5 @@ gem 'googleauth'
 gem 'google-api-client'
 
 gem 'google-apis-mybusinessbusinessinformation_v1'
+gem 'google-apis-mybusinessaccountmanagement_v1'
 gem 'google-apis-youtube_v3'
